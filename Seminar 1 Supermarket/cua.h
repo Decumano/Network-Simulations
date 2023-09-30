@@ -17,7 +17,7 @@ typedef struct{
 }el_cua; 
 
 #define CUA_MAX 10  // nombre maxim elements a la cua
-#define CUA_NUM 6   // nombre maxim de cues
+#define CUA_NUM 10   // nombre maxim de cues
 
 el_cua crea_element_cua(float tar);
 void crea_cua(int max_cua, int max_cues);

@@ -56,7 +56,7 @@ int main(void) {
         switch (e.que){
             case OBRIR:
                 bn = 1;
-                for (int i = 0; i < CUA_NUM;i++)
+                for (int i = 0; i < CUA_NUM; i++)
                 {
                     caixa[i] = 0;
                     t = expo(ARRIVAL);
@@ -141,11 +141,11 @@ int main(void) {
 #endif
 #if    0   // test agenda
     ini_agenda(N);
-    e = crea_esdev(ARRIBADA, 9.2);
+    e = crea_esdev(ARRIBADA, 9.2, 0);
     posa_agenda(e);
-    e = crea_esdev(OBRIR, 3.5);
+    e = crea_esdev(OBRIR, 3.5, 0);
     posa_agenda(e);
-    e = crea_esdev(TANCAR, 30);
+    e = crea_esdev(TANCAR, 30, 0);
     posa_agenda(e);
     treu_agenda(&e);
     treu_agenda(&e);

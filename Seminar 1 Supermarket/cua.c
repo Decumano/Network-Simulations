@@ -64,7 +64,7 @@ el_cua crea_element_cua(float tar){
 void crea_cua(int max, int cues){
     max_cua = max;
     max_cues = cues;
-    cua = (el_cua**) malloc( max_cues*sizeof(el_cua));
+    cua = (el_cua**) malloc( max_cues*sizeof(el_cua*));
     if (cua == NULL){
         puts("Crea cua : No hi ha prou memoria per crear cua buida");
         exit(-1);
